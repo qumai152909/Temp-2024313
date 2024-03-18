@@ -2,10 +2,6 @@
 ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
 
 # Book build output
 _book
@@ -14,3 +10,20 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+ # 屏蔽所有node_modules目录
+node_modules/
+ # 屏蔽根目录下的dist目录
+/dist/
+
+tmp/
+
+.DS_Store
+.idea
+.vscode
+*.vim
+
+*.log
+*.lock
+yarn.lock
+package-lock.json
